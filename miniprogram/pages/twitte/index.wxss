@@ -1,0 +1,65 @@
+/* pages/twitte/index.wxss */
+
+.inputForm{
+  height:350rpx;
+  background-color:rgba(128,128,128,0.3);
+  border-radius: 3%;
+  margin:30rpx;
+}
+
+.content{
+  width:95%;
+  margin-left: 20rpx;
+  top:13rpx;
+}
+
+.bg{
+  height: 100%;
+  width: 100%;
+}
+
+.colorSelector{
+  display: flex;
+  flex-direction: row;
+}
+
+.green{
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.gray{
+  background-color: rgba(128, 128, 128,0.3);
+}
+
+.pink{
+  background-color: rgba(255, 192, 203,0.7);
+}
+
+.purple{
+  background-color: rgba(0, 0, 255,0.3);
+}
+
+.blue{
+  background-color: rgba(100, 149, 237,0.6);
+}
+
+
+.border{
+  margin-left: 33rpx;
+  height:60rpx;
+  width: 100rpx;
+  border: blue solid 7rpx;
+  border-radius: 2%;
+}
+
+.no_border{
+  border-radius: 2%;
+  margin-left: 33rpx;
+  height:60rpx;
+  width: 100rpx;
+}
+
+.submitBtn{
+  margin-top: 100rpx;
+  width: 350rpx;
+}

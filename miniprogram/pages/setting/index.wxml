@@ -1,0 +1,17 @@
+<!--pages/setting/index.wxml-->
+<view class="main">
+  <view class="row">
+    <view class="left_field"  bindtap="changeAvator">
+      <view class="row_name">头像</view>
+    </view>
+    <image class="avator" src="{{userInfo.avator}}" bindtap="clickImage"></image>
+  </view>
+  <view class="row" style="height: 75rpx !important;" bindtap="showModel">
+    <view class="row_name">昵称</view>
+    <view class="name">{{userInfo.username}}</view>
+  </view>
+  <modal title="修改昵称" hidden="{{if_hidden}}" confirm-text="确认"
+    cancel-text="取消" bindconfirm="confirm" bindcancel="showModel">
+    <input type="text" model:value="{{nameText}}"/> 
+  </modal>
+</view>

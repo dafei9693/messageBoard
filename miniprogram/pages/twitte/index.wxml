@@ -1,0 +1,16 @@
+<!--pages/twitte/index.wxml-->
+<view class="main">
+  <view class="inputForm" style="background-color:{{colors[color_index]}};">
+    <textarea class="content" placeholder="请输入..." model:value="{{content}}"></textarea>
+  </view>
+  <view class="colorSelector">
+    <block  wx:for="{{if_border}}">
+      <view class="{{item}}">
+        <view class="bg" style="background-color: {{colors[index]}};" bindtap="choose" id="{{index}}"></view>
+      </view>
+    </block>
+  </view>
+  <view class="btnField"><button class="submitBtn" type="primary" bindtap="submit">发表</button></view>
+</view>
+
+

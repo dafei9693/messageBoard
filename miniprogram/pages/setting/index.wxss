@@ -1,0 +1,30 @@
+/* pages/setting/index.wxss */
+
+.row{
+  margin: 35rpx;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-bottom: rgb(238, 238, 238) solid 1rpx;
+  height: 150rpx;
+}
+
+.avator{
+  height: 120rpx;
+  width: 120rpx;
+  right: 30rpx;
+  position: absolute;
+  margin: 15rpx;
+  margin-bottom: 25rpx;
+}
+
+.name{
+  position: absolute;
+  right: 30rpx;
+  color: rgb(94, 93, 93);
+}
+
+.left_field{
+  width: 80%;
+  height: 80%;
+}

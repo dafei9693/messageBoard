@@ -1,0 +1,147 @@
+/**index.wxss**/
+
+.divider{
+  height: 0;
+  width: 100%;
+  border-top:rgb(202, 202, 202) 1rpx solid;
+}
+
+.map{
+  height: auto;
+}
+
+.topfeild{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: max-content;
+  width: max-content;
+  margin: 15rpx;
+}
+
+.s_card{
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  margin-top: 2rpx;
+  margin-bottom: 2rpx;
+  border-radius: 10%;
+  font-size: small;
+}
+
+swiper{
+  height: 1360rpx;
+}
+
+.navbar{
+  display: flex;
+  height: 80rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_item{
+  width: 50%;
+  text-align: center;
+  color:rgb(168, 168, 168);
+}
+
+.nav-item-active{
+  transition: all 0.2s;
+  color: #353535;
+}
+
+.blogs{
+  display: list-item;
+  height: 100%;
+}
+
+.blog_card{
+  height: 30%;
+  width: 90%;
+  margin-left: 10%;
+  box-shadow: 4rpx 4rpx 8rpx  rgba(0,0,0,0.3);
+  margin: 35rpx;
+}
+
+.time{
+  position: absolute;
+  left: 70rpx;
+  font-size:smaller
+}
+
+.ava_img{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin: 20rpx;
+}
+
+.infos{
+  height: 100%;
+}
+
+.menu{
+  display: list-item;
+  width: 100%;
+  height: 100%;
+}
+
+.row{
+  margin: 35rpx;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: left;
+  border-bottom: rgb(238, 238, 238) solid 1rpx;
+}
+
+.avator{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.content{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:22;
+  margin: 10rpx;
+  height: 50%;
+  margin-left: 30rpx;
+}
+
+.option_logo{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.options{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.logo{
+  width: 75rpx;
+}
+
+.userMainLogo{
+  position: absolute;
+  left: 10rpx;
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.floatBtn{
+  height: 70rpx;
+  width: 70rpx;
+  box-shadow: 5rpx 5rpx 10rpx  rgba(0,0,0,0.6);
+  border-radius: 35%;
+}
+
+.Btn_bg{
+  color:white;
+  position: absolute;
+  right:30rpx;
+  bottom: 50rpx;
+}

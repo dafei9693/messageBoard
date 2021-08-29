@@ -1,0 +1,60 @@
+<!--index.wxml-->
+
+<import src="../index/index"/>
+<view class="map">
+<view class="navbar">
+  <block wx:for="{{navbarTitle}}" wx:key="index">
+    <view class="nav_item {{navbarActiveIndex === index ? 'nav-item-active' : ''}}" catchtap="onNavBarTap"
+    data-navbar-index="{{index}}">
+          {{item}}
+    </view>
+  </block>
+</view>
+   <view class="divider"></view>
+  <swiper current="{{navbarActiveIndex}}" bindanimationfinish="onBindAnimationFinish">
+    <swiper-item>
+      <!--<view class="topfeild" >
+        <view wx:for="{{tags}}" wx:for-index="index">
+          <span class="s_card" style="background-color: {{item.bg_color}};">#{{item.content}}</span>
+        </view>
+      </view>-->
+      <scroll-view class="blogs" scroll-y="true" bindscrolltolower="loadmore" bindscrolltoupper="loadnew">
+        <block wx:for="{{blogs}}">
+          <view class="blog_card" style="background-color: {{item.bg_color}} !important;">
+            <view class="avator">
+              <image class="ava_img" src="{{item.ava_img}}"/>
+              <text class="username">{{item.username}}</text>
+            </view>
+            <view class="content">
+              <!--<span class="s_card" style="background-color: {{tags[item.tag_id].bg_color}};">
+                #{{tags[item.tag_id].content}}
+              </span>-->
+              {{item.content}}
+            </view>
+            <view class="options">
+              <view class="time">{{item.time}}</view>
+              <!--<view class="logo"><image class="option_logo" src="../../images/comment_logo.png"></image></view>
+              <view class="logo"><image class="option_logo" src="../../images/thumb_logo.png"></image></view>-->
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <view class="infos">
+        <view class="menu">
+          <view class="row" bindtap="switchToSettings">
+            <image class="userMainLogo" src="../../images/myName.png"></image>
+            <image src="{{userInfo.avator}}" style="height: 100rpx;width:100rpx;border-radius:50%;"></image>
+            <text style="margin-right: 20rpx;">{{userInfo.username}}</text>
+          </view>
+        <!--<view class="row">
+          <image class="userMainLogo" src="../../images/myHistory.png"></image>
+          <text>我的贴子</text>
+        </view>-->
+        </view>
+      </view>
+    </swiper-item>
+    <view class="Btn_bg" bindtap="switchToTwitte"><image src="../../images/add.png" class="floatBtn"></image></view>
+  </swiper>
+</view>
